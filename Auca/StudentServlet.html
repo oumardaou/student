@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student CRUD Operations</title>
+</head>
+<body>
+    <h2>Insert Student</h2>
+    <form action="student" method="post">
+        Student ID: <input type="text" name="student_id"><br>
+        First Name: <input type="text" name="first_name"><br>
+        Last Name: <input type="text" name="last_name"><br>
+        Date of Birth: <input type="date" name="date_of_birth"><br>
+        <input type="submit" value="Insert">
+    </form>
+
+    <h2>Retrieve Students</h2>
+    <form action="student" method="get">
+        <input type="submit" value="Retrieve">
+    </form>
+
+    <h2>Update Student</h2>
+    <form action="student" method="post">
+        Student ID: <input type="text" name="student_id"><br>
+        First Name: <input type="text" name="first_name"><br>
+        Last Name: <input type="text" name="last_name"><br>
+        Date of Birth: <input type="date" name="date_of_birth"><br>
+        <input type="hidden" name="_method" value="put">
+        <input type="submit" value="Update">
+    </form>
+
+    <h2>Delete Student</h2>
+    <form action="student" method="post">
+        Student ID: <input type="text" name="student_id"><br>
+        <input type="hidden" name="_method" value="delete">
+        <input type="submit" value="Delete">
+    </form>
+
+   </body>
+</html>
