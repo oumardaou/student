@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SignUp - AUCA</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    
+    <style>
+		
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+#login {
+  width: 300px;
+  margin: 100px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: rgb(12, 126, 255)
+}
+
+.container {
+  margin: 0 auto;
+  text-align: left;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #186af6;
+  color: white;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+img{
+ padding-left: 25%;
+ 
+  height: 40%;
+  width: 50%;
+}
+form h2{
+  padding-left: 35%;
+}
+	</style>
+</head>
+<body>
+    <form id="login" action="sign" method="post">
+        <img src="logo.jpg" alt="">
+        <h2>SignUp</h2>
+        <div class="container">
+            <label for="id"><b>Id</b></label>
+            <input type="text" placeholder="Enter your id" name="id" required>
+
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Enter your Password" name="password" required>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter your email" name="email" required>
+            <label for="role"><b>Role</b></label>
+            <input type="text" placeholder="Enter your role" name="role" required>
+
+
+
+            <button type="submit">SignUp</button>
+            <a href="login.html">Already have an account</a>
+            
+        </div>
+    </form>
+</body>
+</html>

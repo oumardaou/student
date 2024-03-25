@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student CRUD Operations</title>
+    <style>
+      body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+#news, #events {
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    
+    padding: 1rem 0;
+}
+
+        body {
+            background-color: white;
+            color: rgb(0, 132, 255);
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .form {
+            border: 1px solid blue;
+            padding: 20px;
+            border-radius: 5px;
+            color: white;
+            background-color: #003366;
+        }
+    </style>
+</head>
+<body>
+  <div>
+    <img src="cropped-AUCA-logo-wide-webblue-2-1-1.png" alt="">
+</div>
+<header>
+  
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+           
+            <li><a href="">Programs</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="admissions.html">Academics</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Online Registration</a></li>
+        </ul>
+    </nav>
+</header>
+
+  <div class="container">
+  <div class="form">
+    <h2>Insert Student</h2>
+    <form action="student" method="post">
+        Student ID: <input type="text" name="student_id"><br>
+        First Name: <input type="text" name="first_name"><br>
+        Last Name: <input type="text" name="last_name"><br>
+        Date of Birth: <input type="date" name="date_of_birth"><br>
+        <input type="submit" value="Insert">
+    </form>
+  </div>
+  <div class="form">
+    <h2>Retrieve Students</h2>
+    <form action="student" method="get">
+        <input type="submit" value="Retrieve">
+    </form>
+  </div>
+  <div class="form">
+    <h2>Update Student</h2>
+    <form action="student" method="post">
+        Student ID: <input type="text" name="student_id"><br>
+        First Name: <input type="text" name="first_name"><br>
+        Last Name: <input type="text" name="last_name"><br>
+        Date of Birth: <input type="date" name="date_of_birth"><br>
+        <input type="hidden" name="_method" value="put">
+        <input type="submit" value="Update">
+    </form>
+  </div>
+  <div class="form">
+    <h2>Delete Student</h2>
+    <form action="student" method="post">
+        Student ID: <input type="text" name="student_id"><br>
+        <input type="hidden" name="_method" value="delete">
+        <input type="submit" value="Delete">
+    </form>
+  </div>
+</div>
+   </body>
+</html>
